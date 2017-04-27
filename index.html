@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hedge Fund Management System</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="./js/widgEditor.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	
+</head>
+
+<body>
+	<div id="header">
+		<div id="top_area">
+			<div id="logo_bar">Hedge Fund Management System</div>
+		</div>
+	</div>
+
+ <!-- Show Relations -->
+<!-- <div id="backhome">
+	<li>
+	    <a href="./cgi-bin/Users_table.php">View Users table</a>
+	</li>
+	<li>
+	    <a href="./cgi-bin/Portfolio_table.php">View Portfolio table</a>
+	</li>
+	<li>
+	    <a href="./cgi-bin/Asset_table.php">View Asset table</a>
+	</li>
+	<li>
+	    <a href="./cgi-bin/Bond_table.php">View Bond table</a>
+	</li>
+	<li>
+	    <a href="./cgi-bin/Transaction_table.php">View Transaction table</a>
+	</li>
+	<li>
+	    <a href="./cgi-bin/Percentage_table.php">View Percentage table</a>
+	</li>
+</div> -->
+ <!-- Show Relations ends -->
+<!-- <br>
+<br>
+<br>
+<br>
+<br> -->
+
+<div class="col-md-15 text-center"> 
+	<a href="#myModal" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#login-modal">Login as Client or Manager</a>
+</div>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login To Our System</h1><br>
+				  <form action="cgi-bin/login.php" method="post">
+					<input type="text" name="username" placeholder="Username">
+					<input type="password" name="password" placeholder="Password">
+
+					<label class="radio-inline"><input type="radio" name="user_type" value="Client">Client</label>
+					<label class="radio-inline"><input type="radio" name="user_type" value="Manager">Manager</label>
+
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+					
+				  <div class="login-help">
+					<a href="./register.html">Register</a> - <a href="./forget.html">Forgot Password</a>
+				  </div>
+				</div>
+			</div>
+		  </div>
+
+
+<br>
+<div class="text-center">
+  <img src="./pics/indexpage.jpg" class="rounded">
+</div>
+
+
+</body>
+</html>

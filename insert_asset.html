@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert A New Stock Or Bond</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="./js/widgEditor.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+	<script src="js/register.js"></script>
+	<script src="js/check_register.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style type="text/css" media="all">
+		@import "css/main.css";
+		@import "css/widgEditor.css";
+	</style>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/slide.css">
+</head>
+<body>
+<div id="header">
+	<div id="top_area">
+		<div id="logo_bar">Insert A New Stock Or Bond</div>
+	</div>
+</div>
+
+
+<div>
+	<div class="insert_asset">
+		<div class="table-responsive"> 
+		<form action="cgi-bin/insert_asset.php" method="post">
+			<table class="table">
+				<tr>
+					<td>
+						<div id="insert_asset"><h3>Asset Name:</h3></div>
+					</td>
+					<td>
+						<input type="text" id="asset_name" name ="asset_name"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="insert_asset"><h3>Price:</h3></div>
+					</td>
+					<td>
+						<input type="text" id="price" name="price"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="insert_asset"><h3>Type:</h3></div>
+					</td>
+					<td>
+						<!-- <input type="text" id="type" name="type"/> -->
+						<select id="type" name="type">
+						  <option value="Stock">Stock</option>
+						  <option value="Bond">Bond</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="submit" id="insert_asset" name="insert_asset" value="insert_asset">
+					</td>
+				</tr>
+			</table>	
+		</form>
+		</div>
+		</div>
+
+
+	<div id="backhome">
+        <form action="index.html">
+            <input type="submit" value="Back to Home Page">
+        </form>
+	</div>
+	<br>
+	<div id="register_res"></div>
+
+
+</div>
+</body>
+</html>	

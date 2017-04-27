@@ -1,0 +1,223 @@
+body{
+	background-image: url("../pics/home_cover.jpg");
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+div{
+	word-wrap: break-word;
+}
+#header{
+	width: 100%;
+	height: 170px;
+}
+#top_area{
+	font-size: 12px;
+	width: 100%;
+	height: 100px;
+	margin-top: 20px; 
+}
+#body_main{
+	font-size: 20px;
+
+}
+#caption{
+	font-size: 3em;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#menu{
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	display: block;
+}
+
+#logo_bar{
+	font-family: fantasy;
+	font-size: 5em;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 25em;
+}
+
+#register{
+	font-family: fantasy;
+	font-size: 2em;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+/*    text-align: center;
+    width: 25em;*/
+}
+
+#backhome{
+	font-size: 1.5em;
+	height: 100px;
+	width: 400px;
+	margin-left:45%;
+}
+
+#func_button{
+    font-size: 3px;
+    height: 100px;
+    width: 400px;
+    margin-left:45%;
+}
+
+#login_bar{
+	width: 100%;
+	font-size: 3em;
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+	align-items: center;
+	justify-content: center;
+
+}
+/* menu bar*/
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu li {
+    float: left;
+    margin-left: 7%;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+#menu li a:hover:not(.active){
+    background-color: #111;
+
+}
+
+#menu .active {
+    background-color: #4CAF50;
+}
+/* dropdown menu*/
+#menu li.dropdown {
+    display: inline-block;
+}
+
+#menu .dropdown-content {
+	z-index:1;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#menu .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#menu .dropdown-content a:hover {background-color: #f1f1f1}
+
+/*#menu .dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+#search_bar{
+	float: right;
+	margin-right: 5%;
+}
+#search{
+    background-image: url('../pics/searchicon.png');
+    background-position: 12px 8px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: fantasy;
+    margin-top:5px;
+    padding: 9px 18px 10px 45px;
+}
+#search_btn{
+	margin-left: 5px;
+	background-color: #4CAF50; /* Green */
+	border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: fantasy;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+#search_btn:hover{
+	color:red;
+}
+/* end of index css*/
+
+
+#body_content table{
+	margin: 3px 5%;
+	border: 1px solid;
+	width: 90%;
+	min-height: 100px;
+
+}
+.table_head td{
+	padding: 10px 0;
+	font-family: Times;
+	font-size: 30px;
+	background-color: #e6f1f6;
+}
+.table_entry td{
+	padding: 2px 0;
+	font-family: fantasy;
+	font-size: 25px;
+	background-color: white;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {font-size: 24px;}
+
+
+#submit{
+	margin: 10px auto;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    line-height: 1.4em;
+    width: 20em;
+    border: 2px solid #003399;
+    border-top-color: #0099FF;
+    border-left-color: #0099FF;
+    padding: 0.25em;
+    background-color: #0066CC;
+    color: #FFFFFF;
+	display: block;
+}
